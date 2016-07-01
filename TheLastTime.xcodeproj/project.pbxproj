@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183D92EF1D2565AA00823AC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183D92EE1D2565AA00823AC1 /* QuartzCore.framework */; };
 		18C4563D1D24FA0B0017EACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4563C1D24FA0B0017EACB /* main.m */; };
 		18C456401D24FA0B0017EACB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4563F1D24FA0B0017EACB /* AppDelegate.m */; };
 		18C456431D24FA0B0017EACB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C456421D24FA0B0017EACB /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		18C4564B1D24FA0B0017EACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C456491D24FA0B0017EACB /* LaunchScreen.storyboard */; };
 		18C456561D24FA0B0017EACB /* TheLastTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C456551D24FA0B0017EACB /* TheLastTimeTests.m */; };
 		18C456611D24FA0B0017EACB /* TheLastTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C456601D24FA0B0017EACB /* TheLastTimeUITests.m */; };
+		18C456711D24FAC50017EACB /* DDClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C456701D24FAC50017EACB /* DDClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183D92EE1D2565AA00823AC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C456381D24FA0B0017EACB /* TheLastTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLastTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C4563C1D24FA0B0017EACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C4563E1D24FA0B0017EACB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		18C4565C1D24FA0B0017EACB /* TheLastTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLastTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C456601D24FA0B0017EACB /* TheLastTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheLastTimeUITests.m; sourceTree = "<group>"; };
 		18C456621D24FA0B0017EACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C4566F1D24FAC50017EACB /* DDClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDClock.h; sourceTree = "<group>"; };
+		18C456701D24FAC50017EACB /* DDClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDClock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183D92EF1D2565AA00823AC1 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		18C4562F1D24FA0B0017EACB = {
 			isa = PBXGroup;
 			children = (
+				183D92EE1D2565AA00823AC1 /* QuartzCore.framework */,
 				18C4563A1D24FA0B0017EACB /* TheLastTime */,
 				18C456541D24FA0B0017EACB /* TheLastTimeTests */,
 				18C4565F1D24FA0B0017EACB /* TheLastTimeUITests */,
@@ -101,6 +108,7 @@
 		18C4563A1D24FA0B0017EACB /* TheLastTime */ = {
 			isa = PBXGroup;
 			children = (
+				18C4566E1D24FAC50017EACB /* DDClock */,
 				18C4563E1D24FA0B0017EACB /* AppDelegate.h */,
 				18C4563F1D24FA0B0017EACB /* AppDelegate.m */,
 				18C456411D24FA0B0017EACB /* ViewController.h */,
@@ -138,6 +146,15 @@
 				18C456621D24FA0B0017EACB /* Info.plist */,
 			);
 			path = TheLastTimeUITests;
+			sourceTree = "<group>";
+		};
+		18C4566E1D24FAC50017EACB /* DDClock */ = {
+			isa = PBXGroup;
+			children = (
+				18C4566F1D24FAC50017EACB /* DDClock.h */,
+				18C456701D24FAC50017EACB /* DDClock.m */,
+			);
+			path = DDClock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C456711D24FAC50017EACB /* DDClock.m in Sources */,
 				18C456431D24FA0B0017EACB /* ViewController.m in Sources */,
 				18C456401D24FA0B0017EACB /* AppDelegate.m in Sources */,
 				18C4563D1D24FA0B0017EACB /* main.m in Sources */,
@@ -413,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TheLastTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yulingsong.TheLastTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TheLastTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yulingsong.TheLastTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +518,7 @@
 				18C456671D24FA0B0017EACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C456681D24FA0B0017EACB /* Build configuration list for PBXNativeTarget "TheLastTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +527,7 @@
 				18C4566A1D24FA0B0017EACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C4566B1D24FA0B0017EACB /* Build configuration list for PBXNativeTarget "TheLastTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +536,7 @@
 				18C4566D1D24FA0B0017EACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
