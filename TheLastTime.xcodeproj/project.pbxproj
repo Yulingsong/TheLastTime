@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1833A9B11D260CEC00A74DB0 /* JKSideSlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833A99E1D260CEC00A74DB0 /* JKSideSlipView.m */; };
+		1833A9B21D260CEC00A74DB0 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833A9A01D260CEC00A74DB0 /* MenuCell.m */; };
+		1833A9B31D260CEC00A74DB0 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1833A9A11D260CEC00A74DB0 /* MenuCell.xib */; };
+		1833A9B41D260CEC00A74DB0 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833A9A31D260CEC00A74DB0 /* MenuView.m */; };
+		1833A9B51D260CEC00A74DB0 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1833A9A41D260CEC00A74DB0 /* MenuView.xib */; };
 		183D92EF1D2565AA00823AC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183D92EE1D2565AA00823AC1 /* QuartzCore.framework */; };
 		18C4563D1D24FA0B0017EACB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4563C1D24FA0B0017EACB /* main.m */; };
 		18C456401D24FA0B0017EACB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C4563F1D24FA0B0017EACB /* AppDelegate.m */; };
@@ -37,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1833A99D1D260CEC00A74DB0 /* JKSideSlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSideSlipView.h; sourceTree = "<group>"; };
+		1833A99E1D260CEC00A74DB0 /* JKSideSlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSideSlipView.m; sourceTree = "<group>"; };
+		1833A99F1D260CEC00A74DB0 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		1833A9A01D260CEC00A74DB0 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		1833A9A11D260CEC00A74DB0 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		1833A9A21D260CEC00A74DB0 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		1833A9A31D260CEC00A74DB0 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		1833A9A41D260CEC00A74DB0 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		183D92EE1D2565AA00823AC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18C456381D24FA0B0017EACB /* TheLastTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLastTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C4563C1D24FA0B0017EACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1833A99C1D260CEC00A74DB0 /* JKSideSlipView */ = {
+			isa = PBXGroup;
+			children = (
+				1833A99D1D260CEC00A74DB0 /* JKSideSlipView.h */,
+				1833A99E1D260CEC00A74DB0 /* JKSideSlipView.m */,
+				1833A99F1D260CEC00A74DB0 /* MenuCell.h */,
+				1833A9A01D260CEC00A74DB0 /* MenuCell.m */,
+				1833A9A11D260CEC00A74DB0 /* MenuCell.xib */,
+				1833A9A21D260CEC00A74DB0 /* MenuView.h */,
+				1833A9A31D260CEC00A74DB0 /* MenuView.m */,
+				1833A9A41D260CEC00A74DB0 /* MenuView.xib */,
+			);
+			name = JKSideSlipView;
+			path = JKSideSlipView/JKSideSlipView;
+			sourceTree = "<group>";
+		};
 		18C4562F1D24FA0B0017EACB = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +137,7 @@
 		18C4563A1D24FA0B0017EACB /* TheLastTime */ = {
 			isa = PBXGroup;
 			children = (
+				1833A99C1D260CEC00A74DB0 /* JKSideSlipView */,
 				18C4566E1D24FAC50017EACB /* DDClock */,
 				18C4563E1D24FA0B0017EACB /* AppDelegate.h */,
 				18C4563F1D24FA0B0017EACB /* AppDelegate.m */,
@@ -260,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1833A9B31D260CEC00A74DB0 /* MenuCell.xib in Resources */,
 				18C4564B1D24FA0B0017EACB /* LaunchScreen.storyboard in Resources */,
+				1833A9B51D260CEC00A74DB0 /* MenuView.xib in Resources */,
 				18C456481D24FA0B0017EACB /* Assets.xcassets in Resources */,
 				18C456461D24FA0B0017EACB /* Main.storyboard in Resources */,
 			);
@@ -288,9 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C456711D24FAC50017EACB /* DDClock.m in Sources */,
+				1833A9B21D260CEC00A74DB0 /* MenuCell.m in Sources */,
 				18C456431D24FA0B0017EACB /* ViewController.m in Sources */,
 				18C456401D24FA0B0017EACB /* AppDelegate.m in Sources */,
 				18C4563D1D24FA0B0017EACB /* main.m in Sources */,
+				1833A9B41D260CEC00A74DB0 /* MenuView.m in Sources */,
+				1833A9B11D260CEC00A74DB0 /* JKSideSlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

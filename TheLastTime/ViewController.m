@@ -16,6 +16,9 @@
 
 #import "ViewController.h"
 #import "DDClock.h"
+#import "JKSideSlipView.h"
+#import "MenuCell.h"
+#import "MenuView.h"
 
 @interface ViewController ()
 /** 钟表 */
@@ -38,10 +41,10 @@
 @property (nonatomic,strong) UILabel *hour;
 /** minute */
 @property (nonatomic,strong) UILabel *minute;
-
 /** 左菜单按钮 */
 @property (nonatomic,strong) UIButton *leftBtn;
-
+/** 侧滑菜单 */
+@property (nonatomic,strong) JKSideSlipView *sideSlipView;
 
 
 @end
@@ -169,6 +172,8 @@
     self.clock = [[DDClock alloc]initWithTheme:DDClockThemeDefault position:CGPointMake((SCREEN_WIDTH - 200 )/2, 100)];
     [self.view addSubview:self.clock];
     
+    
+    
 
     [self.noticeLb setFrame:YLSRect(0, 320/667, 1, 30/667)];
     [self.noticeLb setText:@"你 23.718237131 岁了"];
@@ -181,7 +186,6 @@
     [self.noticeLb1 setFont:[UIFont systemFontOfSize:YLSFont(9/375)]];
     
     [self.bgView setFrame:YLSRect(28/375, 370/667, 318/375, 92/667)];
-//    [self.bgView setBackgroundColor:[UIColor orangeColor]];
     
     [self.year setFrame:YLSRect(0, 0, 106/375, 46/667)];
     [self.year setNumberOfLines:0];
@@ -246,7 +250,28 @@
     [self.leftBtn setFrame:YLSRect(10/375, 30/667, 50/375, 30/667)];
     [self.leftBtn setBackgroundColor:[UIColor lightGrayColor]];
     [self.leftBtn setTitle:@"left" forState:UIControlStateNormal];
+    [self.leftBtn addTarget:self action:@selector(cilckLeftView) forControlEvents:UIControlEventTouchUpInside];
 
+}
+
+
+
+-(void)cilckLeftView
+{
+//    NSLog(@"1111");
+    _sideSlipView = [[JKSideSlipView alloc]initWithSender:self];
+    _sideSlipView.backgroundColor = [UIColor redColor];
+    MenuView *menu = [MenuView menuView];
+//    [menu didSelectRowAtIndexPath:^(id cell, NSIndexPath *indexPath) {
+//        NSLog(@"click");
+//        [_sideSlipView hide];
+////        NextViewController *next = [[NextViewController alloc]init];
+////        [self.navigationController pushViewController:next animated:YES];
+//    }];
+//    menu.items = @[@{@"title":@"1",@"imagename":@"1"},@{@"title":@"2",@"imagename":@"2"},@{@"title":@"3",@"imagename":@"3"},@{@"title":@"4",@"imagename":@"4"}];
+    [_sideSlipView setContentView:menu];
+    [self.view addSubview:_sideSlipView];
+    [_sideSlipView show];
 }
 
 
